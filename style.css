@@ -290,3 +290,15 @@ a {
   color: #c4b5fd;
   text-decoration: underline;
 }
+
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.link-sep {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
