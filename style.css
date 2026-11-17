@@ -42,6 +42,7 @@ a {
   background: rgba(15, 17, 23, 0.9);
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .nav-content {
@@ -189,7 +190,9 @@ a {
 .card-footer {
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 16px;
   padding-top: 14px;
   border-top: 1px solid var(--border);
 }
@@ -201,6 +204,21 @@ a {
   font-size: 0.85rem;
   padding: 8px 16px;
   border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.link-sep {
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .link-muted {
@@ -240,7 +258,7 @@ a {
   font-size: 0.85rem;
 }
 
-/* Privacy Policy */
+/* Privacy Policy & Terms */
 .policy-box {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -289,16 +307,4 @@ a {
 .policy-box a {
   color: #c4b5fd;
   text-decoration: underline;
-}
-
-.legal-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.link-sep {
-  color: var(--muted);
-  font-size: 0.85rem;
 }
